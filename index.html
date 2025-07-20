@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaiCity Railway Transit - Minecraft Engineering Showcase</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon" style="display: inline-block; vertical-align: middle; margin-right: 8px;">
+                    <img src="images/mcrt.png" style="height: 32px; width: auto; vertical-align: middle;">
+                </span>
+                <span class="logo-text" style="display: inline-block; vertical-align: middle;">MaiCity Railway Transit</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#overview" class="nav-link">Overview</a></li>
+                <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#technical" class="nav-link">Technical</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-main">MaiCity Railway Transit</span>
+                    <span class="title-sub">Engineering Excellence in Minecraft</span>
+                </h1>
+                <p class="hero-description">
+                    A mega-scale transportation system built in Minecraft.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('overview')">Explore Project</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('technical')">Technical Specs</button>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">KM of Track</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Stations</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">9</div>
+                    <div class="stat-label">Lines</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="overview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Project Overview</h2>
+                <!-- <p class="section-subtitle">A testament to Minecraft engineering and urban planning excellence</p> -->
+            </div>
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h3>The Vision</h3>
+                    <p>
+                        MaiCity Railway Transit represents the pinnacle of transportation infrastructure in Minecraft. 
+                        Built using the advanced Minecraft Transit Railway mod.
+                    </p>
+                    <h3>Scale & Complexity</h3>
+                    <p>
+                        Spanning across multiple biomes and connecting diverse urban, the railway system 
+                        features complex interlocking networks, automated signaling systems, and realistic train operations 
+                        that mirror real-world transit systems.
+                    </p>
+                    <div class="highlight-features">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🏗️</span>
+                            <span>Complex Engineering</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🌆</span>
+                            <span>Urban Integration</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">⚡</span>
+                            <span>Automated Systems</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="overview-image">
+                    <img src="images/minecraft_cityscape.jpg" alt="MaiCity Urban Landscape" class="overview-img">
+                    <div class="image-caption">MaiCity's expansive urban landscape integrated with railway infrastructure</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Key Features</h2>
+                <p class="section-subtitle">Advanced systems that bring realism to Minecraft transportation</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚇</div>
+                    <h3>Metro System</h3>
+                    <p>Underground rapid transit network with multiple lines, automated doors, and realistic station announcements.</p>
+                    <ul class="feature-details">
+                        <li>9 Metro Lines</li>
+                        <li>Underground & Elevated Sections</li>
+                        <li>Automated Train Control</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚄</div>
+                    <h3>High-Speed Rail</h3>
+                    <p>Intercity connections with high-speed trains, advanced signaling, and dedicated infrastructure.</p>
+                    <ul class="feature-details">
+                        <li>300 km/h Operations</li>
+                        <li>Dedicated Track Infrastructure</li>
+                        <li>Advanced Signaling Systems</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏢</div>
+                    <h3>Station Architecture</h3>
+                    <p>Meticulously designed stations featuring modern architecture, passenger amenities, and realistic layouts.</p>
+                    <ul class="feature-details">
+                        <li>Custom Architectural Designs</li>
+                        <li>Passenger Flow Optimization</li>
+                        <li>Accessibility Features</li>
+                    </ul>
+                </div>
+                <!-- <div class="feature-card">
+                    <div class="feature-icon">📡</div>
+                    <h3>Smart Systems</h3>
+                    <p>Integrated control systems with real-time monitoring, automated scheduling, and dynamic routing.</p>
+                    <ul class="feature-details">
+                        <li>Central Control Room</li>
+                        <li>Real-time Monitoring</li>
+                        <li>Automated Operations</li>
+                    </ul>
+                </div> -->
+                <div class="feature-card">
+                    <div class="feature-icon">🌉</div>
+                    <h3>Infrastructure</h3>
+                    <p>Complex bridges, tunnels, and elevated sections that seamlessly integrate with the urban landscape.</p>
+                    <ul class="feature-details">
+                        <li>Suspension Bridges</li>
+                        <li>Multi-level Interchanges</li>
+                        <li>Tunnel Networks</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Precision Engineering</h3>
+                    <p>Every element designed with engineering precision, from track geometry to station spacing.</p>
+                    <ul class="feature-details">
+                        <li>Realistic Track Geometry</li>
+                        <li>Optimized Station Spacing</li>
+                        <li>Grade Separation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Section -->
+    <section id="technical" class="technical">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Specifications</h2>
+                <p class="section-subtitle">The engineering details behind the system</p>
+            </div>
+            <div class="technical-content">
+                <div class="tech-grid">
+                    <div class="tech-category">
+                        <h3>Platform & Technology</h3>
+                        <div class="tech-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Game Platform:</span>
+                                <span class="spec-value">Minecraft Java Edition</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Primary Mod:</span>
+                                <span class="spec-value">Minecraft Transit Railway</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Version:</span>
+                                <span class="spec-value">Latest Stable Release</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Additional Mods:</span>
+                                <span class="spec-value">WorldEdit, Iris</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h3>Network Statistics</h3>
+                        <div class="tech-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Total Track Length:</span>
+                                <span class="spec-value">100+ Kilometers</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Number of Stations:</span>
+                                <span class="spec-value">40+ Stations</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Railway Lines:</span>
+                                <span class="spec-value">9 Operational Lines</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Service Types:</span>
+                                <span class="spec-value">Metro, High-Speed</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h3>Engineering Features</h3>
+                        <div class="tech-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Signaling System:</span>
+                                <span class="spec-value">Automated Block Control</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Power Supply:</span>
+                                <span class="spec-value">Third Rail</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Track Gauge:</span>
+                                <span class="spec-value">Standard Gauge (MTR Standard)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Maximum Speed:</span>
+                                <span class="spec-value">300 km/h (High-Speed Lines)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h3>Construction Details</h3>
+                        <div class="tech-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Development Time:</span>
+                                <span class="spec-value">2+ Years</span>
+                            </div>
+                            <!-- <div class="spec-item">
+                                <span class="spec-label">Total Blocks Placed:</span>
+                                <span class="spec-value">10+ Million</span>
+                            </div> -->
+                            <div class="spec-item">
+                                <span class="spec-label">Design Methodology:</span>
+                                <span class="spec-value">Real-world Transit Systems</span>
+                            </div>
+                            <!-- <div class="spec-item">
+                                <span class="spec-label">Planning Tools:</span>
+                                <span class="spec-value">CAD, GIS Mapping</span>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Project Gallery</h2>
+                <p class="section-subtitle">Showcasing the engineering marvel</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/minecraft_railway_station.png" alt="Modern Railway Station" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>Respwan Station</h4>
+                        <p>Multi-level passenger terminal with modern architecture</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/minecraft_metro.png" alt="Underground Metro System" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>Shek Wan Station</h4>
+                        <p>Muiti-level transit network with stunning views</p>
+                    </div>
+                </div>
+                <!-- <div class="gallery-item">
+                    <img src="images/railway_infrastructure.jpg" alt="Railway Infrastructure" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>Track Infrastructure</h4>
+                        <p>Precision-engineered track systems and signaling</p>
+                    </div>
+                </div> -->
+                <div class="gallery-item">
+                    <img src="images/modern_station.jpg" alt="Futuristic Station Design" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>Station Architecture</h4>
+                        <p>Contemporary design meets functional excellence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MaiCity Railway Transit</h3>
+                    <p>Pushing the boundaries of transportation engineering in Minecraft.</p>
+                    <div class="footer-stats">
+                        <span>Engineering Excellence</span>
+                        <span>Urban Innovation</span>
+                        <span>Technical Mastery</span>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Project Highlights</h4>
+                    <ul>
+                        <li>100+ KM of Track</li>
+                        <li>40+ Stations</li>
+                        <li>9 Railway Lines</li>
+                        <li>Advanced Automation</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Technology</h4>
+                    <ul>
+                        <li>Minecraft Transit Railway Mod</li>
+                        <li>Automated Systems</li>
+                        <li>Real-world Engineering</li>
+                        <li>Urban Planning</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jack Xu. Created by MiniMax Agent.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
